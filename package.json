@@ -7,16 +7,23 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
+    "react-calendar-heatmap": "^1.9.0",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "react-tooltip": "^5.28.0",
     "web-vitals": "^2.1.4"
   },
+
+  "homepage": "https://ellyhonig.github.io/music-heatmap",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -34,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
