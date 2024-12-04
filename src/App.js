@@ -136,8 +136,8 @@ function App() {
   };
 
   const login = () => {
-    const client_id = '5822ece2416a4358bab39c7799c035d0'; // Your actual client ID
-    const redirect_uri = 'http://localhost:3000/music-heatmap'; // Your actual redirect URI
+    const client_id = '5822ece2416a4358bab39c7799c035d0'; 
+    const redirect_uri = "https://ellyhonig.github.io/music-heatmap";
     const scope = 'user-read-recently-played';
     window.location = `https://accounts.spotify.com/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(
       redirect_uri
